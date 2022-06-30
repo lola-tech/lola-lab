@@ -1,20 +1,17 @@
-import { Heading, Text, Code } from '@chakra-ui/react';
+import { Heading } from '@chakra-ui/react';
 import { Layout } from '@/components';
+import CookieClicker from './cookieClicker';
 
 export default function Index() {
   return (
     <Layout
       props={{
-        title: `Lola UI Starter`,
-        description: `Lola UI Starter index page`,
+        title: `Lola Lab`,
+        description: `Lola lab app`,
       }}
     >
-      <Heading>Lola UI Starter</Heading>
-      <Text>
-        Edit this page here:{` `}
-        <Code>./src/pages/index.tsx</Code>
-      </Text>
-      <Text fontSize="smaller">(Static page.)</Text>
+      <Heading>Lola Lab - Cookie clicker</Heading>
+      <CookieClicker />
     </Layout>
   );
 }
