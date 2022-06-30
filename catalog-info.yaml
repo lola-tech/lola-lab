@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "lola-lab"
+  description: "code examples for blog posts"
+  annotations:
+    github.com/project-slug: lola-tech/lola-lab
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "workers"
