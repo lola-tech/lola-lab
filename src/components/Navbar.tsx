@@ -5,8 +5,9 @@ import NextChakraLink from './NextChakraLink';
 import Logo from './Logo';
 
 const LINKS: Record<string, string> = {
-  INDEX: `/`,
-  'LOREM IPSUM': `/lorem-ipsum`,
+  HOME: `/`,
+  'COOKIE CLICKER': `/cookie-clicker`,
+  'CUSTOM HOOK': `/custom-hook`,
 };
 
 type NavProps = {
@@ -44,6 +45,13 @@ const NavLink = ({ href, children, ...props }: NavProps) => {
 
 const Navbar = () => {
   const navLinks: ReactNode[] = [];
+  Object.keys(LINKS).forEach((k) => {
+    navLinks.push(
+      <NavLink key={k} href={LINKS[k]}>
+        {k}
+      </NavLink>,
+    );
+  });
   return (
     <HStack spacing={0} p="2rem 4rem">
       <Logo />

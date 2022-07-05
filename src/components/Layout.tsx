@@ -21,7 +21,8 @@ const Layout = ({ children, props }: Props) => (
       maxW="container.md"
       marginTop="2rem"
       marginBottom="10rem"
-      shadow="dark-lg"
+      borderRadius="5px"
+      shadow="xs"
     >
       <VStack spacing="3rem" align="left" p="3rem">
         {children}
