@@ -11,9 +11,9 @@ export default function Index() {
     >
       <Heading>Lola Lab</Heading>
       <Text>
-        Welcome to the Lola Lab! Here we have some of our <Code>code</Code>{' '}
-        examples linked to our blog posts, which you can check out{' '}
-        <Link href="https://www.lola.tech/blog">here.</Link>
+        Welcome to the Lola Lab! This is where you can review some of our{' '}
+        <Code>code</Code> examples found in our blog posts. You can check out
+        our blog <Link href="https://www.lola.tech/blog">here.</Link>
       </Text>
     </Layout>
   );
